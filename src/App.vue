@@ -41,23 +41,24 @@ import Slider from './components/Slider.vue';
         <p class="text-huincha">¡Contrata hoy y obtén los mejores beneficios</p>
       </div>
 
-      <div class="img-chico flex justify-around items-center p-5">
-        <img class="visible md:invisible" src="./assets/img/png/chico_mob.png" alt="imagen chico">
-        <img class="invisible md:visible" src="./assets/img/png/chico_tablet.png" alt="imagen chico">
-      </div>
-      
-      <div class="text-center m-2">
-        <p class="text-cliente">
-          Hazte cliente empresa del Banco de Chile y 
+      <div class="flex flex-col md:flex-row items-center">
 
-          <span class="text-producto">obtén tu producto a costo $0*</span>
-
-        </p>
-      </div>
-
+        <div class="img-chico order-1 md:order-2 md:w-1/2 p-5">
+          <img class="block md:hidden" src="./assets/img/png/chico_mob.png" alt="imagen chico">
+          <img class="hidden md:block" src="./assets/img/png/chico_tablet.png" alt="imagen chico">
+        </div>
 
       
-      <div class="flex flex-col justify-around items-center">
+        <div class="text-center m-2 order-2 md:order-1 md:w-1/2">
+
+          <div class="text-center m-2">
+            <p class="text-cliente">
+              Hazte cliente empresa del Banco de Chile y 
+
+              <span class="text-producto">obtén tu producto a costo $0*</span>
+
+            </p>
+          </div>
 
         <div class="p-5">
           <button class="btn-quiero">
@@ -74,6 +75,11 @@ import Slider from './components/Slider.vue';
 
 
       </div>
+
+
+      </div>
+
+
 
     </div>
 

@@ -46,7 +46,6 @@ body {
     background-image: url(./assets/img/png/background_shape_mob.png);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-attachment: fixed;
     
 }
 
@@ -95,7 +94,11 @@ body {
 
     .fondo {
         background-image: url(./assets/img/png/background_shape_tablet.png);
-    
+        background-attachment: fixed;
+    }
+
+    .img-chico {
+        margin: 0%;
     }
 }
 
