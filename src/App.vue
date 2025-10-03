@@ -25,11 +25,9 @@ import Slider from './components/Slider.vue';
         </button>
       </div>
 
-      <div class="">
+      <div class="block md:hidden">
         <img src="./assets/img/png/menu_mob.png" alt="imagen menu" srcset="./assets/img/svg/menu_mob.svg">
       </div>
-
-
 
     </div>
 
@@ -45,13 +43,14 @@ import Slider from './components/Slider.vue';
 
         <div class="img-chico order-1 md:order-2 md:w-1/2 p-5">
           <img class="block md:hidden" src="./assets/img/png/chico_mob.png" alt="imagen chico">
-          <img class="hidden md:block" src="./assets/img/png/chico_tablet.png" alt="imagen chico">
+          <img class="hidden md:block lg:hidden" src="./assets/img/png/chico_tablet.png" alt="imagen chico">
+          <img class="hidden lg:block" src="./assets/img/png/chico_desk.png" alt="imagen chico">
         </div>
 
       
         <div class="text-center m-2 order-2 md:order-1 md:w-1/2">
 
-          <div class="text-center m-2">
+          <div class="text-center lg:text-left m-2">
             <p class="text-cliente">
               Hazte cliente empresa del Banco de Chile y 
 
@@ -60,31 +59,31 @@ import Slider from './components/Slider.vue';
             </p>
           </div>
 
-        <div class="p-5">
-          <button class="btn-quiero">
-            QUIERO CONTRATAR
-          </button>
-        </div>
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="p-5">
+              <button class="btn-quiero">
+                QUIERO CONTRATAR
+              </button>
+            </div>
 
-        <div class="p-3">
-          <button class="btn-tarifas">
-            NUESTRAS TARIFAS
-          </button>
-        </div>
+            <div class="p-3">
+              <button class="btn-tarifas">
+                NUESTRAS TARIFAS
+              </button>
+            </div>
+          </div>
+
 
 
 
       </div>
-
-
-      </div>
-
-
 
     </div>
 
+   </div>
 
-  <Slider />
+
+    <Slider />
 
 
 

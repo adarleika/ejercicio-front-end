@@ -25,12 +25,11 @@ function pauseSlide() {
   isPaused.value = !isPaused.value; // Alternar el estado
 }
 
-// Opcional: Si necesitas pasar estas funciones a otro componente (no lo necesitas en el botón), 
-// no es necesario hacer 'return' en <script setup>, se exponen automáticamente.
+
 </script>
 
 <template>
-  <div class="fixed bottom-6 left-0 right-0 flex justify-center items-center space-x-6">
+  <div class="bottom-6 left-0 right-0 flex justify-center items-center space-x-6">
     
     <button @click="prevSlide" class="prevSlide m-2">
         &lt;

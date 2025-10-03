@@ -100,16 +100,27 @@ body {
     .img-chico {
         margin: 0%;
     }
+
+    .btn-quiero, .btn-tarifas {
+        height: 56px;
+        width: 198px;
+
+    }
 }
 
  /*lg */
- @media (width >= 69rem) { 
+ @media (width >= 59rem) { 
 
     .fondo {
         background-image: url(./assets/img/png/background_shape_desk.png);
     
     }
-    
+
+    .text-cliente {
+        font-size: 40px;
+        line-height: 48px;
+    }
+        
  }
 
 
