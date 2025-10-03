@@ -10,6 +10,10 @@ body {
     height: 64px;
 }
 
+.text-produc-tarifas, .text-contratar, .text-beneficios {
+    color: #ffffff;
+}
+
 .btn-contratar {
     background-color: #00DBBC;
     width: 100px;
@@ -76,3 +80,45 @@ body {
     border-radius: 260px;
     border: solid;
 }
+
+
+
+/*sm */
+@media (width >= 40rem) { 
+    
+
+ }
+
+
+ /*md */
+ @media (width >= 48rem) { 
+
+    .fondo {
+        background-image: url(./assets/img/png/background_shape_tablet.png);
+    
+    }
+}
+
+ /*lg */
+ @media (width >= 69rem) { 
+
+    .fondo {
+        background-image: url(./assets/img/png/background_shape_desk.png);
+    
+    }
+    
+ }
+
+
+ /*xl */
+ @media (width >= 80rem) { 
+    
+    
+ }
+
+
+/*2xl */
+ @media (width >= 96rem) { 
+    
+    
+ }
