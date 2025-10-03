@@ -29,7 +29,7 @@ function pauseSlide() {
 </script>
 
 <template>
-  <div class="bottom-6 left-0 right-0 flex justify-center items-center space-x-6">
+  <div class="bottom-6 left-0 right-0 flex justify-center lg:justify-start items-center space-x-6">
     
     <button @click="prevSlide" class="prevSlide m-2">
         &lt;

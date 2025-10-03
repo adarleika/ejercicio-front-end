@@ -33,6 +33,14 @@ body {
 
 }
 
+.fondo {
+    background-color: #1A1E89; 
+    background-image: url(./assets/img/png/background_shape_mob.png);
+    background-repeat: no-repeat;
+    background-size: 63%;
+    background-position: 100% 0%;
+}
+
 .img-chico {
     margin: 10%;
 }
@@ -42,18 +50,15 @@ body {
      
 }
 
-.fondo {
-    background-image: url(./assets/img/png/background_shape_mob.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    
-}
-
 .text-cliente {
     font-weight: 300;
     font-size: 32px;
     line-height: 40px;
 
+}
+
+.text-producto.br {
+    display: block;
 }
 
 .text-producto {
@@ -91,9 +96,10 @@ body {
 
  /*md */
  @media (width >= 48rem) { 
-
     .fondo {
         background-image: url(./assets/img/png/background_shape_tablet.png);
+        background-size: 38%; 
+        background-position: right top; 
         background-attachment: fixed;
     }
 
@@ -110,15 +116,20 @@ body {
 
  /*lg */
  @media (width >= 59rem) { 
-
     .fondo {
         background-image: url(./assets/img/png/background_shape_desk.png);
-    
+        background-size: 40%;
+        background-position: 100% 169%;
+        background-attachment: initial;
     }
 
     .text-cliente {
         font-size: 40px;
         line-height: 48px;
+    }
+
+    .text-producto.br {
+        display: hidden;
     }
         
  }
@@ -126,7 +137,11 @@ body {
 
  /*xl */
  @media (width >= 80rem) { 
-    
+
+    .img-chico {
+        height: 531px;
+    }
+
     
  }
 

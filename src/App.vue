@@ -33,7 +33,7 @@ import Slider from './components/Slider.vue';
 
     <div class="fondo">
 
-      <div class="huincha flex justify-center items-center">
+      <div class="huincha flex justify-center items-center px-4 gap-2">
         <img src="./assets/img/png/truck_fast.png" alt="imagen truck fast" srcset="./assets/img/svg/truck_fast.svg">
 
         <p class="text-huincha">¡Contrata hoy y obtén los mejores beneficios</p>
@@ -41,10 +41,14 @@ import Slider from './components/Slider.vue';
 
       <div class="flex flex-col md:flex-row items-center">
 
-        <div class="img-chico order-1 md:order-2 md:w-1/2 p-5">
-          <img class="block md:hidden" src="./assets/img/png/chico_mob.png" alt="imagen chico">
-          <img class="hidden md:block lg:hidden" src="./assets/img/png/chico_tablet.png" alt="imagen chico">
-          <img class="hidden lg:block" src="./assets/img/png/chico_desk.png" alt="imagen chico">
+        <div class="img-chico order-1 md:order-2 md:w-1/2 p-5 relative overflow-hidden">
+
+
+
+          <img class="block md:hidden relative z-10" src="./assets/img/png/chico_mob.png" alt="imagen chico">
+          <img class="hidden md:block lg:hidden relative z-10" src="./assets/img/png/chico_tablet.png" alt="imagen chico">
+          <img class="hidden lg:block relative z-10" src="./assets/img/png/chico_desk.png" alt="imagen chico">
+        
         </div>
 
       
@@ -52,7 +56,8 @@ import Slider from './components/Slider.vue';
 
           <div class="text-center lg:text-left m-2">
             <p class="text-cliente">
-              Hazte cliente empresa del Banco de Chile y 
+              Hazte cliente empresa <br class="block lg:hidden"> 
+                del Banco de Chile y <br class="block lg:hidden">
 
               <span class="text-producto">obtén tu producto a costo $0*</span>
 
@@ -72,9 +77,6 @@ import Slider from './components/Slider.vue';
               </button>
             </div>
           </div>
-
-
-
 
       </div>
 
