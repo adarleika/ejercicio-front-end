@@ -7,7 +7,10 @@ import Slider from './components/Slider.vue';
     <div class="menu flex flex-row justify-around items-center">
 
       <div class="p-5">
-        <img src="./assets/img/png/logo_mob.png" alt="imagen logo" srcset="./assets/img/svg/logo_mob.svg">
+        <picture>
+          <source srcset="./assets/img/svg/logo_mob.svg" type="image/svg+xml">
+          <img src="./assets/img/png/logo_mob.png" alt="logo de banco">
+      </picture>
       </div>
 
       <div class="md:contents md:flex-row justify-around invisible md:visible">
@@ -26,7 +29,12 @@ import Slider from './components/Slider.vue';
       </div>
 
       <div class="block md:hidden">
-        <img src="./assets/img/png/menu_mob.png" alt="imagen menu" srcset="./assets/img/svg/menu_mob.svg">
+
+        <picture>
+          <source srcset="./assets/img/svg/menu_mob.svg" type="image/svg+xml">
+          <img src="./assets/img/png/menu_mob.png" alt="imagen menu">
+        </picture>
+        
       </div>
 
     </div>
