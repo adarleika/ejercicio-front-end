@@ -43,11 +43,20 @@ import Slider from './components/Slider.vue';
 
         <div class="img-chico order-1 md:order-2 md:w-1/2 p-5 relative overflow-hidden">
 
+          <picture class="block md:hidden relative z-10 w-full"> 
+            <source srcset="./assets/img/webp/chico_mob.webp" type="image/webp">
+            <img src="./assets/img/png/chico_mob.png" alt="imagen chico (movil)" class="w-full"> 
+          </picture>
 
-
-          <img class="block md:hidden relative z-10" src="./assets/img/png/chico_mob.png" alt="imagen chico">
-          <img class="hidden md:block lg:hidden relative z-10" src="./assets/img/png/chico_tablet.png" alt="imagen chico">
-          <img class="hidden lg:block relative z-10" src="./assets/img/png/chico_desk.png" alt="imagen chico">
+          <picture class="hidden md:block lg:hidden relative z-10 w-full">
+            <source srcset="./assets/img/webp/chico_tablet.webp" type="image/webp">
+            <img src="./assets/img/png/chico_tablet.png" alt="imagen chico (tablet)" class="w-full">
+          </picture>
+          
+          <picture class="hidden lg:block relative z-10 w-full">
+            <source srcset="./assets/img/webp/chico_desk.webp" type="image/webp">
+            <img src="./assets/img/png/chico_desk.png" alt="imagen chico (desktop)" class="w-full">
+          </picture>
         
         </div>
 
